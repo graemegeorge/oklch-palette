@@ -1,0 +1,70 @@
+{
+  "name": "oklch-palette",
+  "version": "0.1.0",
+  "description": "Generate 12-step OKLCH palettes from a seed color. Exports CSS variables and a Tailwind preset with accessible scales.",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./tailwind": {
+      "types": "./dist/tw/preset.d.ts",
+      "import": "./dist/tw/preset.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup --dts",
+    "dev": "vite --config example/vite.config.ts --open",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build",
+    "example:dev": "vite --config example/vite.config.ts --open",
+    "example:build": "npm run build && vite build --config example/vite.config.ts",
+    "example:preview": "vite preview --config example/vite.config.ts"
+  },
+  "peerDependencies": {
+    "tailwindcss": ">=3.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "tsup": "^8.0.1",
+    "vitest": "^1.6.0",
+    "@types/node": "^20.11.30",
+    "vite": "^5.4.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "keywords": [
+    "oklch",
+    "palette",
+    "tailwind",
+    "design-system",
+    "tokens",
+    "css-variables",
+    "color",
+    "p3"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/graemegeorge/oklch-palette.git"
+  },
+  "bugs": {
+    "url": "https://github.com/graemegeorge/oklch-palette/issues"
+  },
+  "homepage": "https://github.com/graemegeorge/oklch-palette#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "Graeme George",
+  "license": "MIT"
+}

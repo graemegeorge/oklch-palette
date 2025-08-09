@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>oklch-palette — playground</title>
+    <style>
+      body {
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+        padding: 24px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        gap: 8px;
+      }
+      .sw {
+        height: 56px;
+        border-radius: 10px;
+        border: 1px solid #e5e7eb;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+      }
+      .row {
+        margin-bottom: 12px;
+      }
+      .dim {
+        color: #6b7280;
+        font-size: 12px;
+      }
+      .controls {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        margin-bottom: 12px;
+      }
+      input[type="text"] {
+        padding: 6px 8px;
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+      }
+      button {
+        padding: 6px 10px;
+        border-radius: 8px;
+        border: 1px solid #e5e7eb;
+        background: #f9fafb;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #f3f4f6;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>oklch-palette — playground</h1>
+    <div id="root"></div>
+    <script type="module" src="/main.tsx"></script>
+  </body>
+</html>
