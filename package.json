@@ -1,6 +1,6 @@
 {
   "name": "oklch-palette",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Generate 12-step OKLCH palettes from a seed color. Exports CSS variables and a Tailwind preset with accessible scales.",
   "type": "module",
   "exports": {

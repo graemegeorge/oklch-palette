@@ -6,6 +6,8 @@ OKLCH is perceptually uniform, so equal steps look even. This package creates pr
 
 ---
 
+<img alt="Screenshot 2025-08-09 at 23 18 59" src="https://github.com/user-attachments/assets/36c699a7-b35e-44bd-8174-05676ed845d3" />
+
 ## Install
 
 ```bash
